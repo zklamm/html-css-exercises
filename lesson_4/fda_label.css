@@ -1,0 +1,86 @@
+html {
+  font-size: 28px;
+}
+
+article {
+  border: 2px solid black;
+  box-sizing: border-box;
+  padding: 10px 15px 15px 15px;
+  width: 680px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+header, section {
+  font-family: "Helvetica Black", Arial;
+}
+
+header {
+  border-bottom: 30px solid black;
+  padding-bottom: 5px;
+}
+  header h1 {
+    font-family: "Franklin Gothic Heavy", Arial;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+  header p {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+section {
+  font-size: 1rem;
+}
+  section h2 {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+  section tbody {
+    border-bottom: 20px solid black;
+  }
+  section td {
+    padding: 3px 0;
+  }
+  section td:nth-child(2) {
+    text-align: right;
+  }
+  section td, section th {
+    border-bottom: 1px solid black;
+  }
+  section th {
+    text-align: left;
+    padding: 10px 0;
+  }
+  section thead {
+    border-bottom: 15px solid black;
+    border-top: 1px solid black;
+  }
+
+footer {
+  font-family: Helvetica, Arial;
+  font-size: 0.9rem;
+}
+  footer ul {
+    padding-left: 20px;
+    margin: 12px 0;
+  }
+/*  footer li {
+    list-style-type: ;
+  }*/
+  footer td, footer th {
+    font-weight: normal;
+    font-size: 0.8rem;
+    text-align: left;
+  }
+  footer thead {
+    border-bottom: 1px solid black;
+  }
+
+  .indent {
+    padding-left: 1.2rem;
+  }
