@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Fluid Photo Gallery</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #141414;
+      color: #f0f0f0;
+      font: normal 16px Helvetica, Arial, sans-serif;
+    }
+
+    .container {
+      background-color: #333333;
+      display: grid;
+      grid-gap: 0 30px;
+      grid-template-areas:
+        "title title title title"
+        "main main  main  main"
+        "img1 img2  img3  img4"
+        "img5 img6  img7  img8"
+        "img9 img10 img11 img12";
+      margin: 0 auto;
+      max-width: 1000px;
+      padding: 25px 20px 20px 20px;
+    }
+
+    @media screen and (max-width: 899px) {
+      .container {
+        grid-template-areas:
+          "title title title"
+          "main  main  main"
+          "img1  img2  img3"
+          "img4  img5  img6"
+          "img7  img8  img9"
+          "img10 img11 img12";
+      }
+    }
+
+    @media screen and (max-width: 599px) {
+      .container {
+        grid-template-areas:
+          "title title"
+          "main  main"
+          "img1  img2"
+          "img3  img4"
+          "img5  img6"
+          "img7  img8"
+          "img9  img10"
+          "img11 img12";
+      }
+    }
+
+    @media screen and (min-width: 1280px) {
+      .container {
+        grid-template-areas:
+          "title title title"
+          "main main img1"
+          "main main img2"
+          "main main img3"
+          ".    .    img4"
+          ".    .    img5"
+          ".    .    img6"
+          ".    .    img7"
+          ".    .    img8"
+          ".    .    img9"
+          ".    .    img10"
+          ".    .    img11"
+          ".    .    img12";
+        max-width: 100%;
+      }
+
+      figure {
+        margin-right: 25px;
+        width: 950px;
+      }
+    }
+
+    h1 {
+      grid-area: title;
+      margin: 1.33rem 0;
+      text-align: center;
+    }
+
+    figure {
+      grid-area: main;
+      padding: 0 0 30px 0;
+    }
+
+    figure img {
+      border: 15px solid #ffffff;
+      width: 100%;
+    }
+
+    figcaption {
+      padding: 6px 0 0 0;
+    }
+
+    .tnail {
+      border: 3px solid #ffffff;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    .a {
+      grid-area: img1;
+    }
+
+    .b {
+      grid-area: img2;
+    }
+
+    .c {
+      grid-area: img3;
+    }
+
+    .d {
+      grid-area: img4;
+    }
+
+    .e {
+      grid-area: img5;
+    }
+
+    .f {
+      grid-area: img6;
+    }
+
+    .g {
+      grid-area: img7;
+    }
+
+    .h {
+      grid-area: img8;
+    }
+
+    .i {
+      grid-area: img9;
+    }
+
+    .j {
+      grid-area: img10;
+    }
+
+    .k {
+      grid-area: img11;
+    }
+
+    .l {
+      grid-area: img12;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>My Photo Gallery</h1>
+    <figure>
+      <img src="http://placehold.it/1200x900" alt="Image0">
+      <figcaption>Example photo</figcaption>
+    </figure>
+    <img class="tnail a" src="http://placehold.it/1200x900" alt="1" title="1">
+    <img class="tnail b" src="http://placehold.it/1200x900" alt="2" title="2">
+    <img class="tnail c" src="http://placehold.it/1200x900" alt="3" title="3">
+    <img class="tnail d" src="http://placehold.it/1200x900" alt="4" title="4">
+    <img class="tnail e" src="http://placehold.it/1200x900" alt="4" title="5">
+    <img class="tnail f" src="http://placehold.it/1200x900" alt="4" title="6">
+    <img class="tnail g" src="http://placehold.it/1200x900" alt="4" title="7">
+    <img class="tnail h" src="http://placehold.it/1200x900" alt="4" title="8">
+    <img class="tnail i" src="http://placehold.it/1200x900" alt="4" title="9">
+    <img class="tnail j" src="http://placehold.it/1200x900" alt="4" title="10">
+    <img class="tnail k" src="http://placehold.it/1200x900" alt="4" title="11">
+    <img class="tnail l" src="http://placehold.it/1200x900" alt="4" title="12">
+  </div>
+</body>
+</html>

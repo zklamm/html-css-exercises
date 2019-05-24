@@ -3,66 +3,39 @@
 <head>
   <title>Sandbox</title>
   <meta charset="utf-8">
-  <style>
-    table {
-      border-collapse: collapse;
-    }
-
-    th, td {
-      border: 1px solid gray;
-    }
-  </style>
 </head>
 <body>
-  <table>
-    <thead>
-      <tr>
-        <th scope="col">Type</th>
-        <th scope="col">Name</th>
-        <th scope="col">Price</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th rowspan="3">Red</th>
-        <td>Pinot</td>
-        <td>$1</td>
-      </tr>
-      <tr>
-        <td>Cab</td>
-        <td>$2</td>
-      </tr>
-      <tr>
-        <td>Char</td>
-        <td>$3</td>
-      </tr>
-      <tr>
-        <th rowspan="3">White</th>
-        <td>Pinot</td>
-        <td>$1</td>
-      </tr>
-      <tr>
-        <td>Cab</td>
-        <td>$2</td>
-      </tr>
-      <tr>
-        <td>Char</td>
-        <td>$3</td>
-      </tr>
-      <tr>
-        <th rowspan="3">Sake</th>
-        <td>Pinot</td>
-        <td>$1</td>
-      </tr>
-      <tr>
-        <td>Cab</td>
-        <td>$2</td>
-      </tr>
-      <tr>
-        <td>Char</td>
-        <td>$3</td>
-      </tr>
-    </tbody>
-  </table>
+  <form action="#" method="get">
+    <fieldset>
+      <dl>
+        <dt><label for="category">Category</label></dt>
+        <dd>
+          <select id="category" name="category" size="5">
+            <option>Core</option>
+            <option>Plugins and Libraries</option>
+            <option>Conventions</option>
+            <option>Reviews</option>
+            <option>Opinion</option>
+            <option>People</option>
+          </select>
+        </dd>
+
+        <dt><label for="tags">Tags</label></dt>
+        <dd>
+          <select id="tags" name="tags" size="5" multiple>
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>Javascript</option>
+            <option>Ruby</option>
+            <option>Rails</option>
+            <option>Python</option>
+            <option>Django</option>
+          </select>
+        </dd>
+      </dl>
+      <input type="submit" value="Filter">
+      <input type="reset">
+    </fieldset>
+  </form>
 </body>
 </html>

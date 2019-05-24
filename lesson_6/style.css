@@ -1,0 +1,19 @@
+body {
+  font: normal 16px Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3 {
+  color: #ce4a4a;
+  margin-bottom: .415rem;
+  padding: 20px;
+}
+
+p {
+  margin: 0;
+  padding: 0 20px;
+}
+
+section {
+  border: 2px solid grey;
+  margin: 0 212px;
+}

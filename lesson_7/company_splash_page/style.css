@@ -1,0 +1,72 @@
+body {
+  background: url("bg_body.gif");
+  display: grid;
+  font-family: 'Nunito Sans', sans-serif;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+header {
+  grid-area: header;
+  margin: 138px 0 61px 2px;
+  text-align: center;
+}
+
+main {
+  background: #FFFFFF;
+  box-sizing: border-box;
+  grid-area: main;
+  height: 713px;
+  text-align: center;
+  padding: 70px 90px;
+  width: 1000px;
+}
+  main section {
+    margin-bottom: 158px;
+  }
+  main h1 {
+    font-size: 36px;
+    letter-spacing: .5px;
+    margin-bottom: 0;
+  }
+  main h1::before,
+  main h1::after {
+    content: "\2022";
+    font-size: 28px;
+    padding: 0 26px 0 24px;
+    vertical-align: 5px;
+  }
+  main h2 {
+    color: #3E98B2;
+    font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: .8px;
+  }
+  main p {
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: 28px;
+    letter-spacing: .2px;
+    margin: 22px 0;
+  }
+
+footer {
+  background: #E7E7E7;
+  display: flex;
+  flex-direction: row;
+  grid-area: footer;
+  justify-content: center;
+  margin-bottom: 144px;
+}
+  footer ul {
+    padding: 0;
+  }
+  footer li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 33px 61px 26px 61px;
+  }
