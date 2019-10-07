@@ -1,0 +1,61 @@
+-----------------------------------------------------------
+    Your First Web Pages
+-----------------------------------------------------------
+---Getting Started
+Attributes:
+- use double quotes when possible
+- boolean attributes don't need an `=` or a value
+- every HTML element may contain one or more attributes or none at all
+- most attributes are specific to individual tags
+- browsers do no check whether your attributes are valid (they'll just ignore them if they're not)
+
+---Creating an HTML Skeleton
+Typical HTML skeleton:
+[html]
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Title</title>
+  <meta charset="utf-8" />
+</head>
+<body>
+</body>
+</html>
+
+[/html]
+
+DOCTYPE:
+- Document Type Definition or DTD
+- isn't part of HTML, merely a message that tells browser specific markup language to expect
+- must be the first item in an HTML document, not even whitespace can precede
+- must use uppercase when defining versions of HTML before HTML5 or non-HTML languages such as XML
+
+`html`:
+- encloses entire HTML document
+- attribute `lang="en"` informs user's browser which language to use
+
+`head`:
+- encloses document header, which consists of elements that provide meta-information to the browser
+- `title` gives the page a title
+- `<meta charset="utf-8">` tells the browser to expect the UTF-8 encoding, which is used by mose web pages
+
+`body`:
+- the content area of the page
+
+---Classes, IDs, and Names
+Classes:
+- identifies a set of page elements that you wish to style consistently
+- any number of elements may belong to the same class
+- any elemetns can belong to one or more classes
+- prefer semantic class names (they should provide meaning)
+- class selectors have lower CSS specificity than ID selectors, but higher than tag name selectors
+
+IDs:
+- applies a unique identification string to a single element
+- each element can have one ID or none
+- use semantic ID names (they should provide meaning)
+- #the browser won't tell you when you use the same ID on more than one element#
+
+Names:
+
