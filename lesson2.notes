@@ -1,0 +1,17 @@
+-----------------------------------------------------------
+    The Box Model
+-----------------------------------------------------------
+---Everything is a Box
+- every element requires a box-shaped segment of the page
+- every character of text content also needs a boxed portion of the page
+- the browser calculates the dimensions of that box by using the browser defaults and CSS
+
+Box Properties:
+- width/height: horizontal and vertical space needed for the content area of the box, which may or may not include the padding and borders
+- padding: area that surrounds the content area of the box and separates the content from its border, typically opaque and hides anything that it overlays
+- border: boundary that surrounds the padding
+- margin: transparent area that lies outside the border and supplies separation between elements
+- display: determines how the browser lays out an element relative to its neighbors
+
+---The Visual Formatting Model
+The `display` property of an element is called the visual formatting model.
