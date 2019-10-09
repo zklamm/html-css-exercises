@@ -78,3 +78,14 @@ Code is explained here: https://css-tricks.com/inheriting-box-sizing-probably-sl
 - guideline: use padding to separate the left and right sides of a conatiner from its content, use margins for the vertical gap
 
 ---Dimensions
+Absolute Units:
+- CSS has one absolute unit of significance: the pixel
+- Be aware that there are differences between a physical pixel (or device or diplay pixel) and a CSS reference pixel
+
+Relative Units:
+- ems and rems are proportional to the *calculated* and *root* font sizes, respectively
+- the calculated font size is the height of the current font in pixels
+- the root font size is the height of the base font for the document
+- once you've set the root font size for a document, `1.5rem` means the same everywhere, whereas ems compound
+- compounding makes ems hard to use and maintain, so prefer rems
+- use percentages to define dimensions as a fraction of the container's width or height
