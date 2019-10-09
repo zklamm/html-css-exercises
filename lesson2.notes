@@ -15,3 +15,23 @@ Box Properties:
 
 ---The Visual Formatting Model
 The `display` property of an element is called the visual formatting model.
+
+Block Elements:
+- by default, a `block` element occupies all horizontal space available within its container, with nothing to the left or right of the block
+- though a `block` element takes up an entire row in a container, this does not alter the width of the element
+- you can convert any element to a `block` element with the `display: block` CSS property
+
+Inline Elements:
+- provide a small bit of semantic meaning to content
+- `inline` elements handle the box properties differently from `block` elements...
+- for `inline` elements, browsers:
+  1. handle left and right margins and left and right padding the same way as `block` elements
+  2. ignore the width and height properties (except with `img` element), but instead use values calculated from the element content
+  3. ignore top and bottom margins
+  4. don't ignore borders, but the results may look odd
+  5. don't ignore top and bottom padding, but you won't notice this unless you have a border or background
+- you can convert any element to an `inline` element with the `display: inline` CSS property
+- the left/right factors affect the flow, while the top and bottom do not
+
+Inline-Block Elements:
+- 
