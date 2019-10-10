@@ -1,0 +1,53 @@
+-----------------------------------------------------------
+    Images
+-----------------------------------------------------------
+---Image Types
+The three types of images you'll see the most often are jpg, png, and gif.
+
+JPG:
+- most common format for images used in web documents
+- provide an exceptional balance of quality and compression
+- uses a *lossy* form of compression; they lose information in exchange for a file size reduction
+- in general, don't work well as CSS background images
+
+PNG:
+- often the best choice for backgrounds and non-photographic images
+- png compression is non-lossy
+- provides both single-color and alpha transparency
+- single-color transparency allows part of an image to be entirely clear by reserving a single color - any pixel that matches that color in the png reveals the content behind the image
+- alpha transparency adds an alpha channel to images, which allows up to 63,536 different levels of transparency tinted by color
+- ideal for images that need all their detail, transparency, or that must support more than 16.7 million colors
+
+GIF:
+- suitable for small images used as user interface icons in an application
+- limited color range (256), but this allows for miniscule file sizes
+- perfect for images where size, detail, and a broad color palette aren't significant
+
+---Adding Images to Web Pages
+`<img />`:
+- a self-closing tag that tells the browser to load an image from a separate resource
+- `src` is a required attribute that tells the browser where to find the image
+- `alt` attribute describes the content of the image as an aid for users who cannot view the images
+- search engines use `alt` to index images, which makes it relevant for search engine optimization(SEO)
+
+Figure and Figcaption:
+- `figure` element designates an item as a representation of information discussed in the content and customarily encloses some media that illustrates the surrounding content
+- can also supply can optional `figcaption` tag, short for figure caption
+
+To make an image clickable and have it link to another page, put the `img` tag inside an `a` tag:
+[html]
+<a href="url-of-link">
+  <img src="url-of-image" alt="alt-text" />
+</a>
+[/html]
+
+Background Images:
+- can add to page by applying the CSS `background` or `background-image` property
+- appear behind the content for the element that requested the background and its descendants
+- use `url()` method as property value
+
+---Guided Project: A Simple Photo Gallery
+`outline` property:
+- outlines are like borders, but they lie outside them
+- they don't interact with the box model, so they don't change the page layout
+- useful during development and debugging

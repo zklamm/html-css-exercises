@@ -89,3 +89,19 @@ Relative Units:
 - once you've set the root font size for a document, `1.5rem` means the same everywhere, whereas ems compound
 - compounding makes ems hard to use and maintain, so prefer rems
 - use percentages to define dimensions as a fraction of the container's width or height
+
+`auto`:
+- as a `width` or `height`, tells the browser to try to fit the entire element (including its margins) in its container
+- as a left or right `margin`, tells the browser to push the element all the way to the right or left (note reversal) in its container, so you can center a block element by setting both the left and right margins to `auto`
+- as a top or bottom `margin`, it's equivalent to `0`
+- padding does not accept `auto` values
+- `auto` is not the same as `100%`
+
+You can freely mix units anywhere you want on a page, but this can lead to problems when you need to determine the "right" length of something
+
+When to use different units:
+- use absolute units sparingly, and stick with pixels.
+- use relative units liberally
+
+---Practice Problems: Spacing and Dimensions
+`auto` margins work for `block` elements, but not `inline` or `inline-block`, so you must also set the `display` style when trying to center an `img`.
