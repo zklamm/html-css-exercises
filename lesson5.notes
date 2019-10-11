@@ -1,0 +1,36 @@
+-----------------------------------------------------------
+    Forms
+-----------------------------------------------------------
+---Forms Overview
+Forms:
+- are the point where front-end and back-end concerns come together
+- displays information to the user, solicits updates, performs some optional rudimentary validation, and then sends the form data to the server
+
+`form` tag:
+- the parent for all form-related tags
+- tells the browser where and how to send the data
+- should contain at least one `input`, `textarea`, or `select` tag; without one, the form is useless
+- most important attributes are `action` and `method`
+- `method` attribute tells the browser whether it should use the HTTP GET or HTTP POST method when sending the data to the server
+- HTTP supports several other methods, but HTML limits you to GET and POST
+- `action` attribute provides the URL to which the browser sends requests
+- individual action items (`button` and `input type="submit"` elements) in a form can override the form's `action` value by using the `formaction` attribute
+
+`fieldset` tag:
+- optional tag that groups together form content as a set of related data
+- forms can have multiple `fieldset` tags
+
+`input` tag:
+- describes a control or widget; that is, a mechanism that lets the user supply information or a request to the application on the server
+- each `input` requires a `type` attribute, which has a large number of valid values
+- most `input` controls require a `name` attribute to specify the name of each item-- the browser uses these names to identify each data item in the form, while the back-end application looks for that name to find the appropriate value
+- `input` is a self-closing tag
+
+`label` tag:
+- provides a way to associate some identifying text with an input field
+- the browser uses the `for` attribute in the `label` tag and the `id` attribute in the `input` tag to associate the two items
+- the user can click on the label to make the cursor jump to the desired field
+- can be used as containers, which eliminates the need for the `for` and `id` attributes
+
+---Input Types
+

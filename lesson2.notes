@@ -86,6 +86,7 @@ Relative Units:
 - ems and rems are proportional to the *calculated* and *root* font sizes, respectively
 - the calculated font size is the height of the current font in pixels
 - the root font size is the height of the base font for the document
+- bugs in some older browsers make it a good idea to set the root font size in both the `html` and `body` elements
 - once you've set the root font size for a document, `1.5rem` means the same everywhere, whereas ems compound
 - compounding makes ems hard to use and maintain, so prefer rems
 - use percentages to define dimensions as a fraction of the container's width or height
