@@ -33,4 +33,18 @@ Forms:
 - can be used as containers, which eliminates the need for the `for` and `id` attributes
 
 ---Input Types
+Types:
+- `text`: creates a simple text entry field
+- `password`: creates a single-line text field with an obscured value
+- `email`: allows entry of an email address in the form `username@domain`
+- `tel`: allows entry of a telephone number
+- `checkbox`: lets the user choose one or more items from a series of yes/no type options
+- `radio`: lets the user choose zero or one item from a list of options
+- `submit`: creates a button that the user can click to submit the contents of a form to the server
+- `reset`: creates a button that the user can click to reset the contents of a form to its default values
+- there are other form controls - you can look them up as needed
+
+---Input Attributes
+`value`:
+- 
 
