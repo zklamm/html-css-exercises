@@ -43,7 +43,7 @@ Flex: a one-dimensional layout tool; you can layout a single row or column with 
 Grid: a two-dimensional layout tool; you can place elements in a grid
 
 ---CSS Frameworks
-Most common are Twitter Bootstrap and Foundation (I think learning CSS Grid is the way to go)
+Most common are Twitter Bootstrap and Foundation (#I think learning CSS Grid is the way to go#)
 
 ---Responsive Design
 Media Queries: define styles that change based on the current size of the browser window
@@ -76,3 +76,7 @@ Example media query:
 Use this tag if you design your app with responsiveness:
 [html] <meta name="viewport" content="width=device-width, initial-scale=1" /> [/html]
 *But do not use it if your website has no responsiveness*
+
+Fluid and Liquid Layouts:
+- liquid layouts often employ percentage values for widths to maintain the same width ratios for content areas as the browser width changes
+- fluid layouts expand and collapse like a liquid layout to a point, then become fixed once the browser width reaches a specific size
